@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+<style>
+    @media all and (orientation: portrait) {
+        .portrait { visibility: visible; }
+        .landscape {
+            visibility: collapse;
+            max-height: 0px;
+            overflow: hidden;
+        }
+    }
+
+    @media all and (orientation: landscape) {
+        .landscape { visibility: visible; }
+        .portrait {
+            visibility: collapse;
+            max-height: 0px;
+            overflow: hidden;
+        }
+    }
+</style>
+
+<div class="portrait">
+    portrait
+</div>
+
+<div class="landscape">
+    <span>landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape&nbsp;landscape</span>
+</div>
